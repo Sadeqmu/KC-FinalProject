@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Header&Footer.css">
+    <link rel="stylesheet" href="./PaymentPage2.css">
+    <title>شجّر</title>
+</head>
+
+<body>
+    <header >
+        <div class="navbar">
+            <a href="#footer"  >
+                <button type="button" id="Button1">تواصل معنا</button>
+            </a>
+            <div class="logo_title">
+                <h1 id="title">شجّر</h1>
+                <img src="/tree.png" id="logo">
+            </div>
+        </div>
+        <div class="section">
+            <ul class="navbar_list">
+            <li class="list"><a href="/الصفحة الرئيسية/MainPage.html" class="Links">الصفحة الرئيسية</a></li>
+                <li class="list"> <a href="PaymentPage.html"  class="Links">ازرع</a></li>
+                <li class="list"><a href="/من نحن؟/about us.html" class="Links">من نحن؟</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="Payment">
+    <div class="information">
+        <div class="Inputs">
+            <input class="inputs" id="name" type="text" placeholder="الاسم الثلاثي" required > 
+            <input class="inputs" id="number" type="tel" placeholder="رقم الهاتف" required>
+            <input class="inputs" id="e-mail" type="text" placeholder="الايميل" required> 
+            <select id="areas" class="inputs" >
+                <optgroup id="Hawally" label="حولي"></optgroup>
+                <optgroup id="Kuwait" label="العاصمة"></optgroup>
+                <optgroup id="Ahmadi" label="الأحمدي"></optgroup>
+                <optgroup id="Jahra" label="الجهراء"></optgroup>
+                <optgroup id="MubarakAlkabeer" label="مبارك الكبير"></optgroup>
+                <optgroup id="Farwaniya" label="الفروانية"></optgroup>
+            </select>
+            <input class="inputs" id="treesNumber" type="text" placeholder="الحد الأقصى : 100" maxlength="100">
+        </div>
+        <div class="labels">
+            <label for="name" id="Label1">الاسم</label>
+            <label for="number" id="Label2">رقم الهاتف</label>
+            <label for="e-mail" id="Label3">الايميل</label>
+            <label for="areas" id="Label4">المنطقة</label>
+            <label for="treesNumber" id="Label5">عدد الأشجار</label>
+        </div>
+    </div>
+    <div id="treesCards" >
+    </div>
+</div>
+<div id="footer">
+    <div class="footerLogo">
+        <h1 id="footerTitle">شجّر</h1>
+        <img src="/tree.png" id="footerImage">
+    </div>
+    <div class="socialMedia">
+        <div id="MediaTitle">تواصل معنا</div>
+        <div class="MediaIcons">
+        <p id="footerMail">sadeq3370@gmail.com</p>
+        <a href="https://www.instagram.com/sadeq_mukhtar/" target="_blank" id="insta">
+        <img src="/instagram-seeklogo.com.svg" >
+        </a>
+        <a href="https://wa.me/99916675" target="_blank" id="whats">
+        <img src="/whatsapp-svgrepo-com.svg" alt="">
+        </a>
+    </div>
+</div>
+    <script src="./PaymentPage.js"></script>
+</body>
+</html>
